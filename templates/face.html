@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced NLP Chatbot</title>
+
+<!-- FIXED PATH -->
+<link rel="stylesheet" href="{{ url_for('static', filename='color.css') }}">
+</head>
+
+<body>
+
+<div class="chat-container">
+    <div class="header">🤖 Smart AI Chatbot</div>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type a message...">
+        <button id="sendBtn">Send</button>
+    </div>
+</div>
+
+<!-- FIXED PATH -->
+<script src="{{ url_for('static', filename='process.js') }}"></script>
+
+</body>
+</html>
